@@ -1,5 +1,6 @@
-const imgbox=document.querySelector('.imgbox')
+const imgbox = document.querySelectorAll('.imgbox')
 
-imgbox.addEventListener('click',function(){
-    imgbox.classList.toggle('active')
-})
+imgbox.forEach(popup => popup.addEventListener('click',function(){
+     popup.classList.toggle('active')
+
+}))
